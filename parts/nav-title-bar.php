@@ -20,7 +20,7 @@
 ?>
 
 <div class="title-bar <?php echo $backgroundClass; ?>" data-responsive-toggle="example-animated-menu" data-hide-for="">
-	<a href="<?php echo BASE_PATH; ?>">
+	<a href="<?php echo bloginfo('url'); ?>">
 		
 	</a>
     <div class="md-menu" data-toggle></div>
