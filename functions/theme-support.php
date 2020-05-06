@@ -47,16 +47,6 @@ function joints_theme_support() {
 		)
 	); 
 
-	if( !defined(IMG_PATH)){
-		define( 'IMG_PATH', get_stylesheet_directory_uri() . '/assets/images' );
-	}
-	if( !defined(ASSETS_PATH)){
-		define( 'ASSETS_PATH', get_stylesheet_directory_uri() . '/assets' );
-	}
-	if( !defined(BASE_PATH)){
-		define( 'BASE_PATH', get_bloginfo('url') );
-	}
-	
 	
 	// Set the maximum allowed width for any content in the theme, like oEmbeds and images added to posts.
 	$GLOBALS['content_width'] = apply_filters( 'joints_theme_support', 1200 );	
