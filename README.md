@@ -21,23 +21,6 @@ $ brew install yarn --without-node
 ```
 
 
-
-## Install Gulp
-Gulp is used to compile the Foundation SASS. We use NPM instead of Yarn so we can install it globally
-```bash
-npm install -g gulp-cli
-```
-
-
-
-## Install Webpack
-Install Webpack gobally so we can compile Javascript. Webpack will take our seperate module files and bundle them all into one file.
-```bash
-npm install -g webpack-cli
-```
-
-
-
 ## Install All NPM Packages
 This will install all the dev dependencies that are in the package.json file
 ```bash
@@ -47,7 +30,6 @@ or
 ```bash
 yarn 
 ```
-
 
 
 ## Adding NPM Packages
@@ -64,12 +46,6 @@ yarn remove -D package-you-want-removed
 
 
 ## Setup 
-First run gulp to compile Foundation files
-```bash
-yarn gulp
-```
-You should only have to do this once.
-
 To watch your SASS files and Javascript run:
 ```bash
 yarn watch
@@ -77,8 +53,7 @@ yarn watch
 This will watch your JS and SASS files for any changes and then compile.
 
 
-
 ## NOTES
 SASS already adds vendor prefixes so we do not need to add them anymore.
-Webpack uses Babel so we can write ES6+ Javascript and use its latest features.
+Parcel lets us use the latest Javascript features.
 By default Scroll Magic and Fancybox are already added as a Node dependency. All you have to do is import it into a JS file. 
