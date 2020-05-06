@@ -20,8 +20,8 @@
 		<?php 
 			$age_gate = (object) array(
 				'brand'						=> 		  'Set this is the brand name',
-				'background-image'			=> 		  IMG_PATH.'/path-to-background-image',
-				'brand_logo'				=>		  IMG_PATH.'/path-to-brand-logo-image',
+				'background-image'			=> 		  get_template_directory_uri().'/path-to-background-image',
+				'brand_logo'				=>		  get_template_directory_uri().'/path-to-brand-logo-image',
 				'age_heading'				=>		  'Are you 21 or older?',
 				'terms_of_service'  		=>		  'terms-of-service.html',
 				'privacy_policy'			=>		  'privacy-policy.html',
